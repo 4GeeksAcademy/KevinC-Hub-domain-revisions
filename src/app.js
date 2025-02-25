@@ -5,7 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-// Changed thr words to specify in loop
+// let functions and characters
 window.onload = function() {
   let pronouns = ['the', 'our', 'his', 'her'];
   let adjs = ['great', 'big', 'little', 'giant'];
