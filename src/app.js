@@ -5,17 +5,19 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
+// Changed thr words to specify in loop
 window.onload = function() {
-  let pronoun = ['the', 'our', 'his', 'her'];
-  let adj = ['great', 'big', 'little', 'giant'];
-  let noun = ['jogger', 'racoon', 'dog', 'cat'];
-  let domain = ['.com', '.net', '.org', '.gov'];
+  let pronouns = ['the', 'our', 'his', 'her'];
+  let adjs = ['great', 'big', 'little', 'giant'];
+  let nouns = ['jogger', 'racoon', 'dog', 'cat'];
+  let domains = ['.com', '.net', '.org', '.gov'];
 
-  for(let i =0; i < pronoun.length; i++) {
-    for(let a =0; a < adj.length; a++) {
-      for(let b =0; b < noun.length; b++) {
-        for(let c =0; c < domain.length; c++) {
-        console.log(pronoun[i]+ adj[a]+ noun[b]+ domain[c]); }
+  // Java program to demonstate the working of for loop
+  for(let pronoun of pronouns) {
+    for(let adj of adjs ) {
+      for(let noun of nouns ) {
+        for(let domain of domains) {
+        console.log(pronoun+adj+noun+domain); }
       }
     }
   }
